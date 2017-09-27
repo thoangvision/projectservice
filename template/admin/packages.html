@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Packages</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- /fonts -->
+  <link rel="stylesheet" href="fonts/icons/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="fonts/icons/icomoon/styles.css">
+  <!-- /style plugins -->
+  <link rel="stylesheet" href="plugins/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="plugins/datatables-1.10.12/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" href="plugins/datetimepicker/css/bootstrap-datetimepicker.min.css">
+  <link rel="stylesheet" href="plugins/html5-reset/reset.css">
+  <!-- /main style -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header id="header" class="header">
+    <div class="t-header">
+      <div class="navbar navbar-inverse">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html">
+            <img src="img/logo.png" alt="">
+          </a>
+          <ul class="nav navbar-nav pull-right visible-xs-block">
+            <li><a data-toggle="collapse" data-target="#navbar-mobile" class="collapsed" aria-expanded="false"><i class="icon-tree5"></i></a></li>
+          </ul>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-mobile" aria-expanded="false" style="height: 1px;">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown language-switch">
+              <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                <img src="img/gb.png" class="position-left" alt=""> English
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="english"><img src="img/gb.png" alt=""> English</a>
+                </li>
+                <li>
+                  <a class="english"><img src="img/jp.png" alt=""> Japanese</a>
+                </li>
+                <li>
+                  <a class="english"><img src="img/vn.png" alt=""> Vietnamese</a>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown dropdown-user">
+              <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                <img src="img/girl.jpg" alt="">
+                <span>Nguyen Tien Dat</span>
+                <i class="caret"></i>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-right">
+                <li><a href="#"><i class="icon-user-plus"></i> My profile</a></li>
+                <li><a href="#"><i class="icon-cog5"></i> Account settings</a></li>
+                <li><a href="#"><i class="icon-switch2"></i> Logout</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="navbar navbar-default" id="navbar-second">
+      <ul class="nav navbar-nav no-border visible-xs-block">
+        <li><a class="text-center collapsed" data-toggle="collapse" data-target="#navbar-second-toggle"><i class="icon-menu7"></i></a></li>
+      </ul>
+      <div class="navbar-collapse collapse" id="navbar-second-toggle">
+        <ul class="clearfix">
+          <li>
+            <a href="#" title="">
+              <i class="fa fa-user-md"></i>
+              <span>Customers</span>
+            </a>
+          </li>
+          <li class="active">
+            <a href="#" title="">
+              <i class="fa fa-database"></i>
+              <span>Packages</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" title="">
+              <i class="fa fa-server"></i>
+              <span>Servers</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" title="">
+              <i class="fa fa-users"></i>
+              <span>Groups</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" title="">
+              <i class="fa fa-user"></i>
+              <span>Users</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <!-- /header -->
+  <main>
+    <div class="packages">
+      <div class="small-container">
+        <h2 class="block-title mb20">Module Packages</h2>
+        <div class="panel panel-flat">
+          <table class="table table-bordered table-packages">
+            <thead>
+              <tr>
+                <th>Package Name</th>
+                <th>Package Icon</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Check-in Check-out</td>
+                <td><img src="img/clock.png" alt=""></td>
+                <td class="actions text-center">
+                  <a class="edit-record" href="#" title="Edit"><i class="fa fa-pencil"></i></a>&nbsp;
+                  <a class="del-record" href="#" title="Delete"><i class="fa fa-trash-o"></i></a>
+                </td>
+              </tr>
+              <tr>
+                <td>Create Forms</td>
+                <td><img src="img/form.png" alt=""></td>
+                <td class="actions text-center">
+                  <a class="edit-record" href="#" title="Edit"><i class="fa fa-pencil"></i></a>&nbsp;
+                  <a class="del-record" href="#" title="Delete"><i class="fa fa-trash-o"></i></a>
+                </td>
+              </tr>
+              <tr>
+                <td>Calendar</td>
+                <td><img src="img/calendar.png" alt=""></td>
+                <td class="actions text-center">
+                  <a class="edit-record" href="#" title="Edit"><i class="fa fa-pencil"></i></a>&nbsp;
+                  <a class="del-record" href="#" title="Delete"><i class="fa fa-trash-o"></i></a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <section class="g-table-button text-right">
+            <button class="btn btn-style btn-add btn-add-package width80" type="button" data-toggle="modal" data-target="#modalAddModulePackage"><i class="fa fa-plus"></i> Add</button>
+          </section>
+        </div>
+        <h2 class="block-title mb20">User Packages</h2>
+        <div class="panel panel-flat">
+          <table class="table table-bordered table-members">
+            <thead>
+              <tr>
+                <th>Members</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>25</td>
+                <td class="actions text-center">
+                  <a class="edit-record" href="#" title="Edit"><i class="fa fa-pencil"></i></a>&nbsp;
+                  <a class="del-record" href="#" title="Delete"><i class="fa fa-trash-o"></i></a>
+                </td>
+              </tr>
+              <tr>
+                <td>50</td>
+                <td class="actions text-center">
+                  <a class="edit-record" href="#" title="Edit"><i class="fa fa-pencil"></i></a>&nbsp;
+                  <a class="del-record" href="#" title="Delete"><i class="fa fa-trash-o"></i></a>
+                </td>
+              </tr>
+              <tr>
+                <td>100</td>
+                <td class="actions text-center">
+                  <a class="edit-record" href="#" title="Edit"><i class="fa fa-pencil"></i></a>&nbsp;
+                  <a class="del-record" href="#" title="Delete"><i class="fa fa-trash-o"></i></a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <section class="g-table-button text-right">
+            <button class="btn btn-style btn-add btn-add-member width80" type="button" data-toggle="modal" data-target="#modalAddUserPackage"><i class="fa fa-plus"></i> Add</button>
+          </section>
+        </div>
+        <h2 class="block-title mb20">Duration</h2>
+        <div class="panel panel-flat">
+          <table class="table table-bordered table-duration">
+            <thead>
+              <tr>
+                <th>Duration</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>3 months</td>
+                <td class="actions text-center">
+                  <a class="edit-record" href="#" title="Edit"><i class="fa fa-pencil"></i></a>&nbsp;
+                  <a class="del-record" href="#" title="Delete"><i class="fa fa-trash-o"></i></a>
+                </td>
+              </tr>
+              <tr>
+                <td>6 months</td>
+                <td class="actions text-center">
+                  <a class="edit-record" href="#" title="Edit"><i class="fa fa-pencil"></i></a>&nbsp;
+                  <a class="del-record" href="#" title="Delete"><i class="fa fa-trash-o"></i></a>
+                </td>
+              </tr>
+              <tr>
+                <td>12 months</td>
+                <td class="actions text-center">
+                  <a class="edit-record" href="#" title="Edit"><i class="fa fa-pencil"></i></a>&nbsp;
+                  <a class="del-record" href="#" title="Delete"><i class="fa fa-trash-o"></i></a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <section class="g-table-button text-right">
+            <button class="btn btn-style btn-add btn-add-duration width80" type="button" data-toggle="modal" data-target="#modalAddDurationPackage"><i class="fa fa-plus"></i> Add</button>
+          </section>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer id="footer" class="footer">
+    <p class="text-center">© 2017. Mi-Com Web App by Vision Vietnam</p>
+  </footer>
+  <!-- /footer -->
+  <div class="back-to-top"></div>
+  <!-- Modal Add Module Package -->
+  <div id="modalAddModulePackage" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Add A New Module Package</h4>
+        </div>
+        <div class="modal-body clearfix">
+          <div class="field clearfix w100">
+            <label for="">Module Name :</label>
+            <div class="">
+              <input type="text" name="" value="" placeholder="" class="form-control">
+            </div>
+          </div>
+          <div class="field clearfix w100">
+            <label for="">Icon :</label>
+            <div class="">
+              <input type="file" name="" class="file-styled">
+            </div>
+          </div>
+          <div class="field clearfix w100">
+            <label for="">Code :</label>
+            <div class="">
+              <input type="text" name="" value="" placeholder="" class="form-control">
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer text-center">
+          <button type="button" class="btn btn-cancel width90" data-dismiss="modal"><i class="fa fa-close"></i> Cancel</button>
+          <button type="button" class="btn btn-style width90"><i class="fa fa-check"></i> Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal Add Module Package -->
+  <div id="modalAddUserPackage" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Add A New User Package</h4>
+        </div>
+        <div class="modal-body clearfix">
+          <div class="field clearfix w100">
+            <label for="">Members :</label>
+            <div class="">
+              <input type="number" name="" value="" placeholder="" class="form-control">
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer text-center">
+          <button type="button" class="btn btn-cancel width90" data-dismiss="modal"><i class="fa fa-close"></i> Cancel</button>
+          <button type="button" class="btn btn-style width90"><i class="fa fa-check"></i> Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal Add Module Package -->
+  <div id="modalAddDurationPackage" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Add A New Duration Package</h4>
+        </div>
+        <div class="modal-body clearfix">
+          <div class="field clearfix w100">
+            <label for="">Duration :</label>
+            <div class="field-duration clearfix">
+              <input type="number" name="" value="" placeholder="" class="form-control">
+              <span>months</span>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer text-center">
+          <button type="button" class="btn btn-cancel width90" data-dismiss="modal"><i class="fa fa-close"></i> Cancel</button>
+          <button type="button" class="btn btn-style width90"><i class="fa fa-check"></i> Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /script plugins-->
+  <script src="plugins/jquery-3.2.1/jquery-3.2.1.min.js"></script>
+  <script src="plugins/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+  <script src="plugins/datatables-1.10.12/js/jquery.dataTables.min.js"></script>
+  <script src="plugins/moment/moment.min.js"></script>
+  <script src="plugins/datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+  <script src="plugins/forms/styling/uniform.min.js"></script>
+  <!-- /app script-->
+  <script src="js/script.js"></script>
+  <script type="text/javascript">
+  $(function() {
+    $(".file-styled").uniform({
+      fileButtonClass: 'action btn btn-style',
+      fileButtonHtml: '<i class="icon-file-plus"></i>',
+      fileDefaultHtml: 'No file selected'
+    });
+  });
+  </script>
+</body>
+
+</html>
